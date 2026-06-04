@@ -49,14 +49,14 @@ app.get("/monsters/:id", (req, res) => {
   const monster = monstersWithIds.find((monster) => monster.id === req.params.id);
 
   if (!monster) {
-    return res.status(404).sendFile(path.join(__dirname, "../client/404.html"));
+    return res.status(404).sendFile(path.join(__dirname, "../client/public/404.html"));
   }
 
   res.sendFile(path.join(__dirname, "../client/detail.html"));
 });
 
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "../client/404.html"));
+  res.status(404).sendFile(path.join(__dirname, "../client/public/404.html"));
 });
 
 app.listen(PORT, () => {
