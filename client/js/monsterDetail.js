@@ -20,6 +20,14 @@ async function getMonsterDetail() {
   }
 }
 
+function formatWeakness(statusWeakness) {
+  if (!statusWeakness || statusWeakness.length === 0) {
+    return "Unknown";
+  }
+
+  return statusWeakness.join(", ");
+}
+
 function displayMonsterDetail(monster) {
   document.title = monster.name;
 
@@ -35,6 +43,9 @@ function displayMonsterDetail(monster) {
 
       <p><strong>ID:</strong> ${monster.id}</p>
       <p><strong>Type:</strong> ${monster.type}</p>
+      <p><strong>Element Weakness:</strong> ${formatWeakness(monster.elementWeakness)}</p>
+      <p><strong>Status Weakness:</strong> ${formatWeakness(monster.statusWeakness)}</p>
+      <p><strong>Weapon Weakness:</strong> ${formatWeakness(monster.weaponWeakness)}</p>
       <p><strong>Description:</strong> ${monster.description}</p>
 
       <a href="/" role="button" class="secondary">Back to Bestiary</a>

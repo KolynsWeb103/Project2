@@ -16,6 +16,14 @@ async function getMonsters() {
   }
 }
 
+function formatWeakness(statusWeakness) {
+  if (!statusWeakness || statusWeakness.length === 0) {
+    return "Unknown";
+  }
+
+  return statusWeakness.join(", ");
+}
+
 function displayMonsters(monsters) {
   monsterList.innerHTML = "";
 
@@ -32,6 +40,9 @@ function displayMonsters(monsters) {
 
       <h2>${monster.name}</h2>
       <p><strong>Type:</strong> ${monster.type}</p>
+      <p><strong>Element Weakness:</strong> ${formatWeakness(monster.elementWeakness)}</p>
+      <p><strong>Status Weakness:</strong> ${formatWeakness(monster.statusWeakness)}</p>
+      <p><strong>Weapon Weakness:</strong> ${formatWeakness(monster.weaponWeakness)}</p>
       <p>${monster.description}</p>
       <a href="/monsters/${monster.id}" role="button">View Details</a>
     `;
