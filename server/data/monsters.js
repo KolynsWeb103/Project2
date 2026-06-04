@@ -15,7 +15,7 @@ const monsters = [
         "name": "Shakalaka",
         "type": "Lynian",
         "description": "Small, four-limbed monsters known for always wearing a mask. They specialize in camouflage, and once they turn thelr special skill on, they're virtually impossible to find. It's said that a settlement has been found deep in the forest.",
-        "image": "/public/images/ico_shakalaka.png"
+        "image": "/public/images/ico_king_shakalaka.png"
     },
     {
         "name": "King Shakalaka",
@@ -33,7 +33,7 @@ const monsters = [
         "name": "Vespoid Queen",
         "type": "Neopteron",
         "description": "A massive thorax and brilliant, gigantic wings mark the Vespoid Queen. It commands its subjects through unique flight patterns, and will stab any intruders with a poisonous stinger that also causes paralysis. It also spits acidic bodily fluid at its prey.",
-        "image": "/public/images/ico_vespoid_queen.png"
+        "image": "/public/images/ico_vespoid.png"
     },
     {
         "name": "Hornetaur",
@@ -141,7 +141,7 @@ const monsters = [
         "name": "Blue Yian Kut-Ku",
         "type": "Bird Wyvern",
         "description": "A bird wyvern with a huge beak and large ears that splay open when it is angered. With Its sensitive hearing it dislikes loud noises. It is smaller but faster than other wyverns.",
-        "image": "/public/images/ico_blue_yian_kut_ku.png"
+        "image": "/public/images/ico_yian_kut_ku.png"
     },
     {
         "name": "Yian Garuga",
@@ -153,7 +153,7 @@ const monsters = [
         "name": "Scarred Yian Garuga",
         "type": "Bird Wyvern",
         "description": "A breed of Yian Kut-Ku with a hard black shell and a long mane. Known for its trap avolding slyness and poison loaded tail, it is a particularly evil wyvern, so beware!",
-        "image": "/public/images/ico_scarred_yian_garuga.png"
+        "image": "/public/images/ico_yian_garuga.png"
     },
     {
         "name": "Gypceros",
@@ -165,7 +165,7 @@ const monsters = [
         "name": "Purple Gypceros",
         "type": "Bird Wyvern",
         "description": "A wyvern that can generate disorienting flashes of light when its prominent head crest is struck. Its rubbery hide resists damage and can ward off Shock Traps, while its spit carries a deadly venom. However. they are quite timid.",
-        "image": "/public/images/ico_purple_gypceros.png"
+        "image": "/public/images/ico_gypceros.png"
     },
     {
         "name": "Hypnocatrice",
@@ -189,13 +189,13 @@ const monsters = [
         "name": "Pink Rathian",
         "type": "Flying Wyvern",
         "description": "Female version of the Rathalos wyvern. Unlike its male counterpart, it usually patrols its territory from the ground. Its tail spikes are filled with poison.",
-        "image": "/public/images/ico_pink_rathian.png"
+        "image": "/public/images/ico_rathian.png"
     },
     {
         "name": "Gold Rathian",
         "type": "Flying Wyvern",
         "description": "Female version of the Rathalos wyvern. Unlike its male counterpart, it usually patrols its territory from the ground. Its tail spikes are filled with poison.",
-        "image": "/public/images/ico_gold_rathian.png"
+        "image": "/public/images/ico_rathian.png"
     },
     {
         "name": "Rathalos",
@@ -207,13 +207,13 @@ const monsters = [
         "name": "Azure Rathalos",
         "type": "Flying Wyvern",
         "description": "Male wyvern that keeps a nest and patrols its patch of territory from the air in search of prey. Its claws are filled with a poison that weakens its quarry.",
-        "image": "/public/images/ico_azure_rathalos.png"
+        "image": "/public/images/ico_rathalos.png"
     },
     {
         "name": "Silver Rathalos",
         "type": "Flying Wyvern",
         "description": "Male wyvern that keeps a nest and patrols its patch of territory from the air in search of prey. Its claws are filled with a poison that weakens its quarry.",
-        "image": "/public/images/ico_silver_rathalos.png"
+        "image": "/public/images/ico_rathalos.png"
     },
     {
         "name": "Khezu",
@@ -225,7 +225,7 @@ const monsters = [
         "name": "Red Khezu",
         "type": "Flying Wyvern",
         "description": "Loathsome wyverns that live inside caves. Near blind, they detect their prey by smell. They are capable of generating electric shocks, which they use to paralyze their prey.",
-        "image": "/public/images/ico_red_khezu.png"
+        "image": "/public/images/ico_khezu.png"
     },
     {
         "name": "Basarios",
@@ -243,7 +243,7 @@ const monsters = [
         "name": "Black Gravios",
         "type": "Flying Wyvern",
         "description": "A large wyvern found in volcanic zones. They possess a flery breath attack and the ability to emit a sleeping gas, They also have extremely hard scales that deflect most weapon attacks.",
-        "image": "/public/images/ico_black_gravios.png"
+        "image": "/public/images/ico_gravios.png"
     },
     {
         "name": "Monoblos",
@@ -255,7 +255,7 @@ const monsters = [
         "name": "White Monoblos",
         "type": "Flying Wyvern",
         "description": "A large-horned wyvern found in desert zones. Their giant horn makes their attacks very dangerous. While they have no breath attack, their ear-splitting roar is the bane of hunters.",
-        "image": "/public/images/ico_white_monoblos.png"
+        "image": "/public/images/ico_monoblos.png"
     },
     {
         "name": "Diablos",
@@ -267,7 +267,7 @@ const monsters = [
         "name": "Black Diablos",
         "type": "Flying Wyvern",
         "description": "Two-horned wyverns found in desert zones. They are capable of burrowing into sand to attack prey from below. Incredibly violent and proud, they are known to unleash terrible wrath when accosted.",
-        "image": "/public/images/ico_black_diablos.png"
+        "image": "/public/images/ico_diablos.png"
     },
     {
         "name": "Tigrex",
@@ -285,13 +285,13 @@ const monsters = [
         "name": "Akantor",
         "type": "Flying Wyvern",
         "description": "A wyvern truly wrapped in mystery. Known to some as the black god and to others as the tyrant of fire, this large and brutal creature is known to the Guild simply as Akantor...",
-        "image": "/public/images/ico_akantor.png"
+        "image": "/public/images/ico_unknown.png"
     },
     {
         "name": "Ukanlos",
         "type": "Flying Wyvern",
         "description": "A mysterious wyvern said to only appear after large avalanches deep in the snowy mountains. Often seen crushing ice balls and rock into powder in its stride, it's known to the Guild as Ukanlos, although there are whisperings that it may be the white god...",
-        "image": "/public/images/ico_ukanlos.png"
+        "image": "/public/images/ico_unknown.png"
     },
     {
         "name": "Cephalos",
@@ -303,7 +303,7 @@ const monsters = [
         "name": "Cephadrome",
         "type": "Piscine Wyvern",
         "description": "The alpha monster form of the Cephalos, Larger and armored with black scales, they fit the appearance of a leader perfectly. Their fins hold a paralyzing toxin.",
-        "image": "/public/images/ico_cephadrome.png"
+        "image": "/public/images/ico_cephalos.png"
     },
     {
         "name": "Plesioth",
@@ -315,7 +315,7 @@ const monsters = [
         "name": "Green Plesioth",
         "type": "Piscine Wyvern",
         "description": "An enormous, flightless, aquatic wyvern with wings that have evolved into fins for swimming. Although superficially fish-like, they can move on land as well. They love frogs.",
-        "image": "/public/images/ico_green_plesioth.png"
+        "image": "/public/images/ico_plesioth.png"
     },
     {
         "name": "Lavasioth",
@@ -327,7 +327,7 @@ const monsters = [
         "name": "Hermitaur",
         "type": "Carapaceon",
         "description": "A small Carapaceon with an incredibly hard shell. Known to live in great numbers in the desert, or lurking underground, one must be careful when treading in its domain. Its brains are said to be a true delicacy.",
-        "image": "/public/images/ico_hermitaur.png"
+        "image": "/public/images/ico_daimyo_hermitaur.png"
     },
     {
         "name": "Daimyo Hermitaur",
@@ -339,13 +339,13 @@ const monsters = [
         "name": "Plum D.Hermitaur",
         "type": "Carapaceon",
         "description": "A large Carapaceon with a giant monster's skull on its back. Fond of the sand, it is malnly seen in the desert or jungle zones. Living underground, it surfaces when hungering for a snack.",
-        "image": "/public/images/ico_plum_d_hermitaur.png"
+        "image": "/public/images/ico_daimyo_hermitaur.png"
     },
     {
         "name": "Ceanataur",
         "type": "Carapaceon",
         "description": "An adolescent Carapaceon with an organic shell firmly placed on its back. Once grown, this shell will be replaced by a glant monster's skull. Mainly living in volcanic zones, it is very aggressive, and not to be underestimated.",
-        "image": "/public/images/ico_ceanataur.png"
+        "image": "/public/images/ico_shogun_ceanataur.png"
     },
     {
         "name": "Shogun Ceanataur",
@@ -357,7 +357,7 @@ const monsters = [
         "name": "Terra S.Ceanataur",
         "type": "Carapaceon",
         "description": "A large Carapaceon with a giant monster's skul on its back. Its long, sharp pincers allow it to pierce volcanic beadrock and travel along ceilings. Sometimes, a precious and valuable pearl can be found inside its shell.",
-        "image": "/public/images/ico_terra_s_ceanataur.png"
+        "image": "/public/images/ico_shogun_ceanataur.png"
     },
     {
         "name": "Shen Gaoren",
@@ -369,7 +369,7 @@ const monsters = [
         "name": "Bullfango",
         "type": "Pelagus",
         "description": "A large wild boar. Foul tempered, they will charge hunters on sight. They are aggressive and powerful, so beware! They are often hunted for their meat, which many hunters find delicious.",
-        "image": "/public/images/ico_bullfango.png"
+        "image": "/public/images/ico_bulldrome.png"
     },
     {
         "name": "Bulldrome",
@@ -393,7 +393,7 @@ const monsters = [
         "name": "Emerald Congalala",
         "type": "Pelagus",
         "description": "A large Pelagus sporting pink fur often spotted in the jungle and swamp zones Fond of mushrooms, its diet affects its breath, which may be poisonous or flaming. One can predict these traits via the food in its local habitat.",
-        "image": "/public/images/ico_emerald_congalala.png"
+        "image": "/public/images/ico_congalala.png"
     },
     {
         "name": "Blango",
@@ -411,7 +411,7 @@ const monsters = [
         "name": "Copper Blangonga",
         "type": "Pelagus",
         "description": "Leader of a Blango pack, it is twice as large and recognized by its glant fangs and whiskers. It sends its pack to attack any trespassers. Its jumping power allows it great mobility in its home ranae of the snowy mountains.",
-        "image": "/public/images/ico_copper_blangonga.png"
+        "image": "/public/images/ico_blangonga.png"
     },
     {
         "name": "Rajang",
@@ -423,7 +423,7 @@ const monsters = [
         "name": "Furious Rajang",
         "type": "Pelagus",
         "description": "Ultra-aggressive creature that is rarely sighted and seldom survived. Survivors report it exhibits a strange attack, The Rajang is said to be a loner, and this isolated life has made it difficult to pin down its territorial leaninas.",
-        "image": "/public/images/ico_furious_rajang.png"
+        "image": "/public/images/ico_rajang.png"
     },
     {
         "name": "Kirin",
@@ -441,7 +441,7 @@ const monsters = [
         "name": "Rusted Kushala Daora",
         "type": "Elder Dragon",
         "description": "A metal plated dragon known as the tempest of wind. It is said that if Kushala Daora is poisoned, its wind abilities decrease. Eyewitnesses report violent storms alongside the dragon, and its wide range means towns may be attacked.",
-        "image": "/public/images/ico_rusted_kushala_daora.png"
+        "image": "/public/images/ico_kushala_daora.png"
     },
     {
         "name": "Chameleos",
@@ -471,7 +471,7 @@ const monsters = [
         "name": "Ashen Lao-Shan Lung",
         "type": "Elder Dragon",
         "description": "A giant dragon few have seen and lived to tell the tale about. When on the rampage it wreaks havoc on all in its path. The Guild has built a fortress to repel the beast, but will it hold?Felyne",
-        "image": "/public/images/ico_ashen_lao_shan_lung.png"
+        "image": "/public/images/ico_lao_shan_lung.png"
     },
     {
         "name": "Yama Tsukami",
@@ -483,19 +483,19 @@ const monsters = [
         "name": "Fatalis",
         "type": "Elder Dragon",
         "description": "A legendary black dragon said to have prowled these lands from the days of old. Many skilled hunters have sought to challenge it, but none ever return. A monster shrouded in mystery...",
-        "image": "/public/images/ico_fatalis.png"
+        "image": "/public/images/ico_unknown.png"
     },
     {
         "name": "Crimson Fatalis",
         "type": "Elder Dragon",
         "description": "A legendary black dragon said to have prowled these lands from the days of old. Many skilled hunters have sought to challenge it, but none ever return. A monster shrouded in mystery...",
-        "image": "/public/images/ico_crimson_fatalis.png"
+        "image": "/public/images/ico_unknown.png"
     },
     {
         "name": "White Fatalis",
         "type": "Elder Dragon",
         "description": "A legendary black dragon said to have prowled these lands from the days of old. Many skilled hunters have sought to challenge it, but none ever return. A monster shrouded in mystery...",
-        "image": "/public/images/ico_white_fatalis.png"
+        "image": "/public/images/ico_unknown.png"
     }
 ];
 

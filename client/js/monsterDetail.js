@@ -25,6 +25,12 @@ function displayMonsterDetail(monster) {
 
   monsterDetail.innerHTML = `
     <article class="detail-card">
+      <img
+        src="${monster.image}"
+        alt="${monster.name}"
+        class="detail-monster-image"
+      >
+
       <h1>${monster.name}</h1>
 
       <p><strong>ID:</strong> ${monster.id}</p>

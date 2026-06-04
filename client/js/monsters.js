@@ -24,6 +24,12 @@ function displayMonsters(monsters) {
     article.classList.add("monster-card");
 
     article.innerHTML = `
+      <img 
+        src="${monster.image}" 
+        alt="${monster.name}" 
+        class="monster-image"
+      >
+
       <h2>${monster.name}</h2>
       <p><strong>Type:</strong> ${monster.type}</p>
       <p>${monster.description}</p>
