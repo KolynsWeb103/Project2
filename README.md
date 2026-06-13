@@ -4,7 +4,7 @@ Submitted by: **Jianxin Lin**
 
 About this web app: **A listicle guide to Monster Hunter creatures, types, weaknesses, and descriptions.**
 
-Time spent: **2** hours
+Time spent: **1** hours
 
 ## Required Features
 
