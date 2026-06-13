@@ -1,4 +1,4 @@
-# WEB103 Project 2 - *Name of App Here*
+# WEB103 Project 2 - *Monster Hunter Freedom Unite Bestiary*
 
 Submitted by: **Jianxin Lin**
 
