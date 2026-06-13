@@ -1,64 +1,46 @@
-const express = require("express");
-const path = require("path");
-const monsters = require("./data/monsters");
+import express from 'express'
+import path from 'path'
+import { fileURLToPath } from 'url'
+import dotenv from 'dotenv'
+import monstersRouter from './routes/monsters.js'
 
-const app = express();
-const PORT = 3000;
+dotenv.config()
 
-function createSlug(name) {
-  return name
-    .toLowerCase()
-    .replaceAll(".", "")
-    .replaceAll("'", "")
-    .replaceAll(" ", "-");
-}
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-const monstersWithIds = monsters.map((monster) => {
-  return {
-    id: createSlug(monster.name),
-    ...monster
-  };
-});
+const app = express()
+const PORT = process.env.PORT || 3000
 
-app.use(express.static(path.join(__dirname, "../client")));
+app.use(express.json())
 
+// Serve client folder
+app.use(express.static(path.resolve(__dirname, '../client')))
+
+// Serve Pico CSS
 app.use(
-  "/pico",
-  express.static(path.join(__dirname, "node_modules/@picocss/pico/css"))
-);
+  '/pico',
+  express.static(path.resolve(__dirname, 'node_modules/@picocss/pico/css'))
+)
 
-app.get("/api/monsters", (req, res) => {
-  res.json(monstersWithIds);
-});
+// Home page
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/index.html'))
+})
 
-app.get("/api/monsters/:id", (req, res) => {
-  const monster = monstersWithIds.find((monster) => monster.id === req.params.id);
+// Use monsters router
+app.use('/api/monsters', monstersRouter)
 
-  if (!monster) {
-    return res.status(404).json({ message: "Monster not found" });
-  }
+// Detail page route
+app.get('/monsters/:id', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/public/detail.html'))
+})
 
-  res.json(monster);
-});
-
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/index.html"));
-});
-
-app.get("/monsters/:id", (req, res) => {
-  const monster = monstersWithIds.find((monster) => monster.id === req.params.id);
-
-  if (!monster) {
-    return res.status(404).sendFile(path.join(__dirname, "../client/public/404.html"));
-  }
-
-  res.sendFile(path.join(__dirname, "../client/detail.html"));
-});
-
+// 404 page
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "../client/public/404.html"));
-});
+  res.status(404).sendFile(path.resolve(__dirname, '../client/public/404.html'))
+})
 
 app.listen(PORT, () => {
-  console.log(`Server is running at http://localhost:${PORT}`);
-});
+  console.log(`Server is running at http://localhost:${PORT}`)
+})
